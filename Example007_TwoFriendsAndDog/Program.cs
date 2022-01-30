@@ -7,16 +7,31 @@ bool isFirstFriendNext = false;
 
 while (distance > 10)
 {
+    // определить складываюмую скорость и сменить направление
     int currentSpeed = secondFriendSpeed;
     if (isFirstFriendNext)
     {
         currentSpeed = firstFriendSpeed;
+        isFirstFriendNext = false;
+    }
+    else
+    {
+        isFirstFriendNext = true;
     }
     double time = distance / (currentSpeed + dogSpeed);
     distance = distance - time * (firstFriendSpeed + secondFriendSpeed);
     count++;
     Console.Write(count);
-    Console.Write(") осталось: ");
+    Console.Write(") ");
+    if (isFirstFriendNext)
+    {
+        Console.Write("|1@ -> 2|");
+    }
+    else
+    {
+        Console.Write("|1 <- @2|");
+    }
+    Console.Write(" осталось: ");
     Console.WriteLine(distance);
 }
 
