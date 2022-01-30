@@ -12,12 +12,8 @@ while (distance > 10)
     if (isFirstFriendNext)
     {
         currentSpeed = firstFriendSpeed;
-        isFirstFriendNext = false;
     }
-    else
-    {
-        isFirstFriendNext = true;
-    }
+
     double time = distance / (currentSpeed + dogSpeed);
     distance = distance - time * (firstFriendSpeed + secondFriendSpeed);
     count++;
@@ -33,6 +29,8 @@ while (distance > 10)
     }
     Console.Write(" осталось: ");
     Console.WriteLine(distance);
+    
+    isFirstFriendNext = !isFirstFriendNext;
 }
 
 Console.Write("Собака пробежит ");
