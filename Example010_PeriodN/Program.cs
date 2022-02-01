@@ -7,7 +7,7 @@ while (num <= 0)
     {
         num = int.Parse(input);
     }
-    catch (FormatException e)
+    catch
     { }
 }
 int inCurString = 0;

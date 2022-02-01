@@ -5,7 +5,7 @@ try
 {
     numDay = int.Parse(input);
 }
-catch (FormatException e)
+catch
 {}
 
 string[] names = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
