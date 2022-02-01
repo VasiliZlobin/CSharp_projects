@@ -8,7 +8,7 @@
         result.Item2 = double.Parse(input);
         result.Item1 = true;
     }
-    catch
+    catch (FormatException)
     { }
     return result;
 }
