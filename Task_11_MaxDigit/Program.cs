@@ -31,14 +31,6 @@ int GetIntegerFromConsole(string message, (int?, int?) range)
     return result;
 }
 
-// метод вычисления количества цифр в натуральном числе
-int CountDigitInNumber(int number)
-{
-    int result = 1;
-    
-    return result - 1;
-}
-
 int number = GetIntegerFromConsole("Введите натуральное двухзначное число: ", (10, 99));
 int maxDigit = 0;
 int nextPosition = 1;
