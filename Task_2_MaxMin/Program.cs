@@ -1,4 +1,8 @@
-﻿(bool, double) inputNumber(int pos)
+﻿/*
+    Задача №2. Даны два числа. Показать большее и меньшее число.
+*/
+
+(bool, double) inputNumber(int pos)
 {
     (bool, double) result = (false, 0);
     Console.Write($"Введите число №{pos}: ");

@@ -1,4 +1,9 @@
-﻿(bool, double) inputNumber(int pos)
+﻿/*
+    Задача №4. Найти максимальное из трех чисел.
+    + дополнительная сложность: найти минимальное из этих трех чисел.
+*/
+
+(bool, double) inputNumber(int pos)
 {
     (bool, double) result = (false, 0);
     Console.Write($"Введите число №{pos}: ");
@@ -20,7 +25,8 @@ for (int i = 0; i < numbers.Length; i++)
     while (!solution.Item1)
     {
         solution = inputNumber(i + 1);
-        if (solution.Item1) numbers[i] = solution.Item2;
+        if (solution.Item1)
+            numbers[i] = solution.Item2;
     }
 }
 double max = numbers[0];

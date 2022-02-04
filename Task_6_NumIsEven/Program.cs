@@ -1,4 +1,8 @@
-﻿int num = 0;
+﻿/*
+    Задача №6. Выяснить является ли число чётным.
+*/
+
+int num = 0;
 bool isNotInt = true;
 while (isNotInt)
 {
