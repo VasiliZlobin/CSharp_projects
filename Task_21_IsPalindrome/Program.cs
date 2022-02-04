@@ -44,19 +44,13 @@ int CountDigitsInNumber(int number)
 int number = GetIntegerFromConsole("Введите натуральное пятизначное число: ", (10000, 99999));
 int count = CountDigitsInNumber(number);
 string part = "";
-if (count % 2 != 0)
+
+for (int i = 1; i <= count / 2; i++)
 {
-    for (int i = 1; i <= count / 2; i++)
+    if (GetDigitInPosition(number, i) != GetDigitInPosition(number, count - i + 1))
     {
-        if (GetDigitInPosition(number, i) != GetDigitInPosition(number, count - i + 1))
-        {
-            part = "не ";
-            break;
-        }        
+        part = "не ";
+        break;
     }
-}
-else
-{
-    part = "не ";
 }
 Console.WriteLine($"{number} {part}является палиндромом.");
