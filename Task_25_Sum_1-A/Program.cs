@@ -27,5 +27,5 @@ int GetIntegerFromConsole((int?, int?) range)
 }
 
 int max = GetIntegerFromConsole((2, null));
-double sum = ((double)max * max + max) / 2;
+long sum = ((long)max * max + max) / 2;
 Console.WriteLine($"Сумма целых чисел от 1 до {max} равна {sum}.");

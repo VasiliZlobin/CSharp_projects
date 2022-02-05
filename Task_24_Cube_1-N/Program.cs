@@ -28,7 +28,7 @@ int GetIntegerFromConsole((int?, int?) range)
 
 int max = GetIntegerFromConsole((2, null));
 // определить вывод последнего результата и его длину
-string lastResult = $" {max}^3 = {(double)max * max * max}";
+string lastResult = $" {max}^3 = {(long)max * max * max}";
 int resultLength = lastResult.Length;
 // посчитать сколько уместится в одной строке консоли
 int countResultsInLine = Console.WindowWidth / resultLength;
@@ -39,7 +39,7 @@ if (countResultsInLine > 0)
     Console.Clear();
     for (int i = 1; i < max; i++)
     {
-        string currentResult = $" {i}^3 = {(double)i * i * i}";
+        string currentResult = $" {i}^3 = {(long)i * i * i}";
         int spaces = resultLength - currentResult.Length;
         for (int j = 0; j < spaces / 2; j++)
         {
