@@ -47,7 +47,8 @@ int CountDigitsInNumber(int number)
 
 int number = GetIntegerFromConsole("Введите целое число: ", (null, null));
 int temp = number < 0 ? -1 * number : number;
-int thirdDigit = GetDigitInPosition(temp, CountDigitsInNumber(temp) - 2);
+int countDigits = CountDigitsInNumber(temp);
+int thirdDigit = GetDigitInPosition(temp, countDigits - 2);
 if (thirdDigit == -1)
 {
     Console.WriteLine("Третьей цифры нет.");
