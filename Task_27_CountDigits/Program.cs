@@ -1,5 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-/*
+﻿/*
     Задачача № 27. Определить количество цифр в числе.
 */
 
