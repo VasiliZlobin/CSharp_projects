@@ -1,4 +1,3 @@
-﻿using System.Reflection.Metadata.Ecma335;
 /*
     Задачача № 28. Подсчитать сумму цифр в числе.
 */
