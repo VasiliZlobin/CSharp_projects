@@ -59,6 +59,8 @@ void PrintArray2D(int[,] array2D, (int?, int?) size)
 
 void DeleteColumnAndRowWithMin(int[,] array2D, (int, int) positionMin)
 {
+    // в строках сместить все колонки после позиции минимального значения влево
+    // сместить позицию строки для значений в строках после строки минимального значения влево
     for (int rowIndex = 0; rowIndex < array2D.GetLength(0) - 1; rowIndex++)
     {
         for (int columnIndex = 0; columnIndex < array2D.GetLength(1) - 1; columnIndex++)
@@ -85,5 +87,5 @@ Console.WriteLine($"Случайный двумерный массив {array2D.
 PrintArray2D(array2D, (null, null));
 (int, int) positionMin = FindPositionMinInArray2D(array2D);
 DeleteColumnAndRowWithMin(array2D, positionMin);
-Console.WriteLine($"После удаления строки и столбца с минималным значением");
+Console.WriteLine($"После удаления строки и столбца с минимальным значением");
 PrintArray2D(array2D, (array2D.GetLength(0) - 1, array2D.GetLength(1) - 1));
